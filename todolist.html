@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="rectangle"></div>
+        <div class="app-name"><h1>To Do List</h1></div>
+ 
+                <form>
+                    <div class="information">
+                        <div class="title">
+                            <label for="title" id="addTitle">Title</label>
+                            <input name="title" id="titleInput" value />
+                        </div>
+
+                        <div class="priority">
+                            <label for="priority" id="addPriority">Priority</label>
+                            <select name="priority" id="priorityInput" onsubmit="addTask()">
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
+                            </select>
+                        </div> 
+
+                        <div class="btn">
+                            <button id="new" type="submit">Add New<span id="plus">+</span></button>
+                        </div>
+                    </div>
+                </form> 
+                
+        <div class="output">
+            <ul>
+            </ul>
+        </div>
+    
+    <script src="todolist.js"></script>
+    
+</body>
+</html>
