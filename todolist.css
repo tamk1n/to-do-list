@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(255, 214, 165);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.completed{
+    text-decoration: line-through;
+    box-shadow: none;
+    color:#ddd
+}
+
+.rectangle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    height: 90%;
+    /* -webkit-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+
+.information{
+    margin-left: 10px;
+    position: absolute;
+    width:60%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: end;
+}
+
+.title input, label{
+    display: block;
+    align-items: end;
+}
+
+label{
+    margin-bottom: 10px;;
+}
+
+#titleInput{
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid  rgb(255, 214, 165);
+    height: 25px;
+}
+
+#priorityInput{
+    width: 150px;
+    border-radius: 10px;
+    height: 31px;
+    border: 2px solid  rgb(255, 214, 165);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#new{
+    border-radius: 10px;
+    border: 2px solid  rgb(255, 156, 70);
+    height: 31px;
+    width: 150px;
+    background-color: rgb(255, 156, 70);
+}
+
+#new:hover{
+    border: 2px solid  rgb(255, 130, 21);
+    background-color: rgb(255, 130, 21);
+}
+
+#plus{
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.app-name{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+ul{
+    position: absolute;
+    width: 48%;
+    height: 400px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+li{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 0.5fr 0.5fr;
+    align-items: center;
+    border: 1px solid rgba(211, 211, 211, 0.341);
+    border-radius: 10px;
+    box-shadow: rgba(234, 164, 90, 0.559) 0px 4px 12px;
+}
+.task{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+
+}
+.task:hover{
+    border: 1px solid rgba(255, 137, 104, 0.585);
+    border-radius: 10px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 25%;
+    background-color: white;
+    border: 1px solid rgb(255, 211, 155);
+    -webkit-appearance: none;
+  }
+
+  .check:checked {
+    background-color: #ff8a46;
+  }
+
+i:hover{
+    color: red;
+    cursor: pointer;
+    
+}
+
